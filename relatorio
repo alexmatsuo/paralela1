@@ -1,0 +1,11 @@
+O algoritmo implementado é uma versão paralela da soma de prefixo, calculamos a soma cumulativa de um vetor. A versao paralela apenas acelera o processo dividindo o trabalalho em multiplas threads.
+
+Descricao da funcao ParallelPrefixSumPth:
+Cria uma pool de threads em que cada thread ira executar uma parte da entrada .
+Em seguida o calculo da soma parcial em cada thread e realizado e armazenado em sum.
+Para garantir que todas as threads tenham terminado seu trabalho foi preciso fazer uma sincronizacao delas.
+Entao sera feito o calculo da soma acumulada, os valores calculados anteriormente serao combinados para obter a soma acumulada .
+Acumula os elementos do vetor de saida apos a soma ter sido calculada por cada thread.
+
+
+
